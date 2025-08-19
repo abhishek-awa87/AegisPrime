@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis Prime: Prompt Architect</title>
+    <link rel="stylesheet" href="index.css">
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.14.0",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react/": "https://esm.sh/react@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Aegis Prime</h1>
+            <!-- This button is required by index.tsx but hidden per the new design -->
+            <button id="start-new-btn" class="btn btn-secondary hidden">Start New</button>
+        </header>
+        <main id="chat-container">
+             <div class="welcome-card fadeIn">
+                <h2>Welcome to Aegis Prime</h2>
+                <p>Provide your high-level objective below to begin.</p>
+            </div>
+        </main>
+        <footer class="input-area">
+            <div id="file-preview-container"></div>
+            <input type="file" id="file-input" class="hidden" accept="image/*">
+            
+            <div class="input-wrapper">
+                <button id="attachment-btn" class="btn-icon" title="Attach image">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mic-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3.375 3.375 0 1 1 18.375 12.74Z" />
+                    </svg>
+                </button>
+                <textarea id="user-input" placeholder="Provide your high-level objective..."></textarea>
+                <button id="copy-input-btn" class="btn btn-secondary">Copy</button>
+                <button id="fast-track-btn" class="btn btn-tertiary">Fast-Track</button>
+                <button id="submit-btn" class="btn btn-primary">Initiate Strategy</button>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

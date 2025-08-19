@@ -1,0 +1,5 @@
+{
+  "name": "Aegis Prime: Prompt Architect v7",
+  "description": "A web application that acts as a proactive AI co-pilot for prompt engineering. Users provide a high-level objective, and the app generates an optimal prompt strategy, which can be refined and then used to create a final, hyper-optimized prompt blueprint.",
+  "requestFramePermissions": []
+}
